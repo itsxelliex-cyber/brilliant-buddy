@@ -1,0 +1,33 @@
+body{
+    background:rgba(143, 222, 58, 0.814);
+    font-family: "Orbitron", sans-serif;
+
+}
+.orbitron-uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+@keyframes slideGallery {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-250px); }
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.gallery-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}

@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brilliant Buddy</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brilliant Buddy</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js"></script>
 </head>
 <body>
+<center><h1> Brilliant Buddy </h1></center>
+<br>
+<br>
+<center><h3> What's your name?</h3></center>
+<center><input type="text" id="nameInput" placeholder="Enter your name" required ></center>
+
+<center><h3> Are you a...</h3></center>
+
+   <center> <select id="roleSelect">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+    </select>
+ </center>
+    <br>
+<center> <button type="submit" id="submitButton"> Submit </button> </center>
+
+<div class="gallery-container">
+        <img src="kids.jpg" alt="Kids" class="gallery-image">
+        <img src="teacher.jpg" alt="Teacher" class="gallery-image">
+        <img src="thinker.jpg" alt="Thinker" class="gallery-image">
+        <img src="study.jpg" alt="Study" class="gallery-image">
+    </div>
 
 </body>
+
 </html>
