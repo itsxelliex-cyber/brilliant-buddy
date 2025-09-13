@@ -16,9 +16,11 @@ document.getElementById("nextButton").addEventListener("click", function() {
 
 
 
+let studentNameInput;
 
-document.getElementById("submitGradeButton").addEventListener("click", function() {
-  const studentNameInput= document.getElementById("studentNameInput");
+document.getElementById("submitGradeButton").onclick = (function() {
+  studentNameInput= document.getElementById("studentNameInput").value;
+  console.log(studentNameInput);
   const gradeInput = document.getElementById("gradeInput");
   const studentName = studentNameInput.value.trim();
   const grade = gradeInput.value.trim();

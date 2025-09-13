@@ -15,11 +15,30 @@
 <br>
 <br>
 
-<center><h3> Student Name </h3></center>
+<center><label><h3> Student Name </h3> </label> </center>
 <center><input type="text" id="studentNameInput" placeholder="Enter student name" required ></center>
 <center><h3> Student Grade </h3></center>
 <center><input type="number" id="gradeInput" placeholder=" Grade (%)" required></center>
 <center><button type="button" id="submitGradeButton"> Submit Grade </button></center>
+
+<center><table id="gradesTable" border="1"></center>
+  <tr>
+    <th>Student Name</th>
+    <th>Grade (%)</th>
+  </tr>
+</table>
+<script>
+    const btnEl= document.querySelector('button');
+    const inputEl= document.querySelector('input');
+    const listEl= document.querySelector('table');
+
+
+    btnEl.addEventListener('click', () => {
+        const studentName= inputEl.value;
+        const grade= document.getElementById("gradeInput").value;
+        listEl.innerHTML = `<tr><td>${studentName}</td><td>${grade}%</td></tr>` + listEl.innerHTML;
+    });
+</script>
 <a href="index.html"> <button type="button" id="backButton"> Home </button> </a>
 <a href="teacherportal.html"><button type="button"id="teachPortalButton"> Teacher Portal </button></a>
 

@@ -25,6 +25,37 @@
   }
 </script>
 
+<center><h3> Create Assignment </h3></center>
+<br>
+<center><h4> Assignment Name </h4></center>
+<center><input type="text" id="assignmentNameInput" placeholder="Enter assignment name" required ></center>
+<center><h4> Assignment Description </h4></center>
+<center><input type="text" id="assignmentDescriptionInput" placeholder="Enter assignment description" required ></center>
+<center><h4> Assignment Due Date </h4></center>
+<center><input type="date" id="assignmentDueDateInput" placeholder="Enter assignment due date" required ></center>
+<center><button type="button" id="createAssignmentButton"> Create Assignment</button></center>
+
+<center><table id="assignmentCreatedTable" border="1"></center>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Assignment Description</th>
+    <th>Assignment Due Date</th> 
+  </tr>
+</table>
+<script>
+    const btnEl= document.querySelector('button');
+    const inputEl= document.querySelector('input');
+    const listEl= document.querySelector('table');
+
+
+    btnEl.addEventListener('click', () => {
+        const assignmentName= inputEl.value;
+        const assignmentDescription= document.getElementById("assignmentDescriptionInput").value;
+        const assignmentDueDate= document.getElementById("assignmentDueDateInput").value;
+        listEl.innerHTML = `<tr><td>${assignmentName}</td><td>${assignmentDescription}</td><td>${assignmentDueDate}</td></tr>` + listEl.innerHTML;
+    });
+</script>
+
 <a href="index.html">  <button type="button" id="backButton"> Home </button> </a>
 <a href="teacherportal.html"> <button type="button"id="teachPortalButton"> Teacher Portal </button></a>
 

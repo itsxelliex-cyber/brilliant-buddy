@@ -28,6 +28,20 @@ button {
     cursor: pointer;
     border-radius: 12px;
 }
+ul {
+    font-size: 30px;
+}
+table {
+    background-color: seashell;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+h3 {
+    background-color: seashell;
+    width: 250px;
+    border-radius: 12px;
+}
 
 .container {
     position: relative;
