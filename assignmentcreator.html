@@ -9,30 +9,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-
+<script src="script.js"></script>
 </head>
 <body>
 <center><h1> Brilliant Buddy </h1></center>
 <br>
 <br>
-<center><h3> What's your name?</h3></center>
-<center><input type="text" id="nameInput" placeholder="Enter your name" required ></center>
 
-<center><h3> Are you a...</h3></center>
+<div id="greeting"></div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+  if (name) {
+    document.getElementById("greeting").innerText = `Hello, ${name}, welcome to your portal! (Teacher)`;
+  }
+</script>
 
-   <center> <select id="roleSelect">
-        <option value="student">Student</option>
-        <option value="teacher">Teacher</option>
-    </select>
- </center>
-    <br>
-    <center> <button type="button" id="nextButton"> Submit </button></center>
- 
-  
+<a href="index.html"> <center> <button type="button" id="backButton"> Home </button> </center> </a>
+<a href="teacherportal.html"><center><button type="button"id="teachPortalButton"> Teacher Portal </button></center></a>
 
 
 
 <script src="script.js"></script>
 </body>
-
 </html>

@@ -16,13 +16,13 @@ h3 {
 
 
 
-@keyframes slideGallery {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-250px); }
-}
+
+
 .gallery-container {
     display: flex;
     flex-direction: column;
+    height: 250px;
+    overflow:hidden;
     
    
 }
