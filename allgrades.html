@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Grades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>All Student Grades</h2>
+  <table id="gradesTable" border="1">
+    <tr>
+      <th>Student Name</th>
+      <th>Grade (%)</th>
+    </tr>
+  </table>
+  <a href="studentgrades.html"><button>Back</button></a>
+  <table id="gradesTable" border="1"></table>
+  <script>
+    const grades = JSON.parse(localStorage.getItem("grades")) || [];
+    const table = document.getElementById("gradesTable");
+    table.innerHTML = "<tr><th>Student Name</th><th>Grade (%)</th></tr>";
+    grades.forEach(({ name, grade }) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${name}</td><td>${grade}</td>`;
+      table.appendChild(row);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
