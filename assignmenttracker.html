@@ -16,23 +16,22 @@
 <br>
 <br>
 
+
 <div id="greeting"></div>
 <script>
   const params = new URLSearchParams(window.location.search);
   const name = params.get("name");
   if (name) {
-    document.getElementById("greeting").innerText = `Hello, ${name}, welcome to your portal! (Teacher)`;
+    document.getElementById("greeting").innerText = `Hello, ${name}, welcome to your portal! (Student)`;
   }
 </script>
 
-
-<a href="index.html">  <button type="button" id="backButton"> Home </button> </a>
-<a href="studentgrades.html"><button type="button"id="gradesButton"> Student Grades</button></a>
-<a href="assignmentcreator.html"><button type="button" id="assignmentCreateButton"> Create Assignment </button></a>
-<a href="lessonmaterial.html"><button type="button" id="lessonMaterialButton"> Lesson Material </button></a>
+<a href="index.html"> <button type="button" id="backButton"> Home </button> </a>
+<a href="studentportal.html"> <button type="button" id="studentPortalButton"> Student Portal </button> </a>
 
 
 
 <script src="script.js"></script>
 </body>
+
 </html>
