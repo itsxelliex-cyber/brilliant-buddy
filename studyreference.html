@@ -26,19 +26,22 @@
     document.getElementById("greeting").innerText = `Hello, ${name}, welcome to your portal! (Student)`;
   }
 </script>
-<div class="color-box">
-  <h3>Study Reference <i class="fa-solid fa-flask"></i> </h3>
-  
-</div>
-<br>
-<div class="world-box">
-  <h3>World History <i class="fa-solid fa-earth-americas"></i></h3>
-</div>
-<br>
-<div class="math-box">
-  <h3>Mathematics  <i class="fa-solid fa-calculator"></i></h3>
-</div>
 
+<div class="main-content">
+     
+ <div class="left-column">
+  <div style="height: 70px;"></div>
+    <div id="box-history"> <img src="history.jpg" width="250" height="250"> </div>
+    <div id="box-math"> <img src="math.jpg" width="250" height="250"> </div>
+    <div id="box-science"> <img src="science.jpg" width="250" height="250"> </div>
+    </div>
+    <div class="right-column">
+<div class="color-box"> <h3>Study Reference <i class="fa-solid fa-school"></i></h3></div>
+<div class="world-box"> <h3>World History <i class="fa-solid fa-earth-americas"></i></h3></div>
+<div class="math-box"> <h3>Mathematics  <i class="fa-solid fa-calculator"></i></h3></div>
+<div class="science-box"> <h3>Science  <i class="fa-solid fa-flask"></i></h3></div>
+ </div>
+</div>
 
 <a href="index.html"> <button type="button" id="backButton"> Home </button> </a>
 <a href="studentportal.html"><button type="button" id="studentPortalButton"> Student Portal </button></a>

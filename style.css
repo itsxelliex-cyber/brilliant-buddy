@@ -24,7 +24,7 @@ button {
     display: inline-block;
     font-size: 16px;
     font-family: "Orbitron", sans-serif;
-    margin: 200px 20px;
+    margin: 100px 20px;
     cursor: pointer;
     border-radius: 12px;
 }
@@ -32,10 +32,9 @@ button {
 .color-box {
     background-color:seashell;
     border-radius: 12px;
-    padding: 0.1px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    width: 250px;
+
     text-align: center;
     display: block;
 
@@ -43,38 +42,55 @@ button {
 
 }
 
-.fa-solid {
-    color: rgb(99, 209, 198);
-    font-size: 30px;
-    margin-top: 10px;
-}
-.world-box {
-    background-color:seashell;
-    border-radius: 12px;
-    padding: 10px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 300px;
-}
+
+
 .fa-solid.fa-earth-americas {
-    color:rgb(77, 48, 25);
-}
-.math-box {
-    background-color:seashell;
-    border-radius: 12px;
-    padding: 10px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 300px;
-}
-.fa-solid.fa-calculator {
-    color:rgba(238, 179, 78, 0.888);
+    color:rgb(152, 89, 200);
 }
 
+.world-box,
+.math-box,
+.science-box {
+    background-color:seashell;
+    border-radius: 12px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+    display: block;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.fa-solid.fa-calculator {
+    color:rgba(255, 153, 50, 0.888);
+    font-size: 20px;
+}
+.fa-solid.fa-school {
+    color:rgb(101, 53, 10);
+    font-size: 20px;
+}
+.fa-solid.fa-flask {
+    color: rgb(123, 255, 191);
+}
+.main-content {
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
 
 
 
