@@ -11,7 +11,11 @@ document.getElementById("nextButton").addEventListener("click", function() {
     ? "studentportal.html"
     : "teacherportal.html";
   window.location.href = `${target}?name=${name}`;
+
 });
+
+
+
 
 document.getElementById("submitGradeButton").addEventListener("click", function() {
   const studentNameInput= document.getElementById("studentNameInput");
