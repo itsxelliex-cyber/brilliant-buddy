@@ -45,5 +45,7 @@ tableHTML += "</table>";
 document.body.innerHTML += tableHTML;
   window.location.href = "allgrades.html";
 })
+
+
   
 
