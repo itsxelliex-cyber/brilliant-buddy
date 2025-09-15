@@ -42,6 +42,26 @@
 <center><input type="date" id="dueDateInput"></center>
 
 <center><button type="button" id="addAssignmentButton"> Add assignment</button></center>
+<center><table id="assignmentTrackerTable" border="1">
+  <tr>
+    <th> Assignment Name</th>
+    <th> Assignment Type </th>
+  <th> Due Date</th>
+  </tr>
+</table></center>
+<script>
+  const btnEl = document.querySelector('button');
+  const inputEl = document.querySelector('input');
+  const listEl = document.querySelector('table');
+
+  btnEl.addEventListener('click', () => {
+    const assignmentName = document.getElementById("assignmentsearchInput").value;
+    const assignmentType = document.getElementById("assignmentTypeSelect").value;
+    const dueDate= document.getElementById("dueDateInput").value;
+    listEl.innerHTML = `<tr><td>${assignmentName}</td><td>${assignmentType}</td><td>${dueDate}</td><tr>` + listEl.innerHTML;
+    });
+
+</script>
 <a href="index.html"> <button type="button" id="backButton"> Home </button> </a>
 <a href="studentportal.html"> <button type="button" id="studentPortalButton"> Student Portal </button> </a>
 
