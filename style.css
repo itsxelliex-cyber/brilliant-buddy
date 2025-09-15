@@ -19,18 +19,7 @@ h3 {
     box-shadow: 5px 5px 5px rgb(50, 114, 50)
 }
 
-#box-0 {
-    border: 4px solid;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    font-size: 225px;
-    background-color:rgb(50, 114, 50);
-    transform:translateY(-20px);
-   
-   
 
-}
 #box-5 {
     border: 15px solid rgb(27, 85, 9);
     border-radius:10px;
@@ -49,7 +38,25 @@ h3 {
     border-radius: 6px;
     transform: translateX(50px);
 }
+#side-banner-box {
+    border:#3a6a3c 4px solid;
+    border-radius: 2px;
+    transform: translate(10px, -600px);
+    width: 200px;
+    height: 500px;
+    
 
+}
+#side-banner-box2 {
+    border:#3a6a3c 4px solid;
+    border-radius: 2px;
+    transform: translate(750px, -1100px);
+    width: 200px;
+    height: 500px;
+    
+
+}
+ /* ADD PICTURES FOR TEACHER GRADING TOMORROW */
 button {
     background-color: #3a6a3c; 
     border: none;
@@ -63,6 +70,10 @@ button {
     margin: 100px 20px;
     cursor: pointer;
     border-radius: 12px;
+    
+}
+#nextButton {
+    transform: translate(0px, -1000px);
 }
 button:hover {
     background-color: #56cb20;
@@ -93,8 +104,8 @@ h3 {
 
 }
 .container .wrapper {
-    width: 60vw;
-    height: 75vh;
+    width: 300px;
+    height: 300px;
     box-shadow: 10px 10px 30px rgba(35, 57, 12, 0.814);
     margin: 5rem auto;
     overflow:hidden;
@@ -159,10 +170,12 @@ h3 {
 
 .resource-box {
     background-color:seashell;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 10px;
     width: 400px;
+    transform: translateX(50px);
 }
+
 
 
 .fa-solid.fa-earth-americas {
@@ -188,18 +201,20 @@ h3 {
     width: 250px;
     height: 250px;
     border: 4px solid green;
+    border-radius: 10px;
     text-align: center;
     transform: translate(600px, -300px);
 
 }
 
-.track-box {
+.track-box img {
     background-color:snow;
     border:rgb(27, 85, 9) 4px solid;
     border-radius: 4px;
     width:250px;
     height:250px;
     transform: translate(50px, -500px);
+    position: static;
 }
 .create-box {
     width: 250px;
@@ -207,6 +222,14 @@ h3 {
     border: 4px solid green;
     text-align: center;
     transform: translate(300px, -550px);
+}
+.astudent-box {
+    border: 4px solid green;
+    border-radius: 6px;
+    width: 250px;
+    height: 250px;
+    transform: translate(300px, -420px);
+
 }
 
 p {
